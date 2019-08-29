@@ -9,13 +9,10 @@ module Luhn
         digit = digit * 2
         if digit >= 10
           digit -= 9
-          total += digit
-        else
-          total += digit
         end
-      else
-        total += digit
       end
+
+      total += digit
     end
 
     if total % 10 == 0
